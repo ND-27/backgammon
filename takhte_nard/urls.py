@@ -33,6 +33,8 @@ urlpatterns = [
 
     # URLs برای اپ home
     path('home/', include('home.urls')),
+
+    path('payments/', include('payments.urls')),
 ]
 if settings.IS_DEVELOPMENT:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
